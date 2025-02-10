@@ -31,7 +31,7 @@ class EmployeeApiController extends Controller
     {
         try {
             $data = $request->validate([
-                'employeename' => 'required|string',
+                'emp_name' => 'required|string',
                 'dob' => 'required|date',
                 'phone' => 'required|string'
             ]);
@@ -59,7 +59,7 @@ class EmployeeApiController extends Controller
     {
         try {
             $data = $request->validate([
-                'employeename' => 'required|string',
+                'emp_name' => 'required|string',
                 'dob' => 'required|date',
                 'phone' => 'required|string'
             ]);
