@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Employee;
 
-class StudentController extends Controller
+class EmployeeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -20,7 +20,7 @@ class StudentController extends Controller
     public function index()
     {
         $response['employees'] = $this->employee->all();
-        return view('page.index')->with($response);
+        return view('pages.index')->with($response);
     }
 
     /**
