@@ -14,8 +14,6 @@ use App\Http\Controllers\EmployeeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource("/",EmployeeController::class);
 
 Route::resource("/employee",EmployeeController::class);

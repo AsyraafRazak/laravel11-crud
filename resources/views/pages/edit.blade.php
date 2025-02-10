@@ -17,11 +17,11 @@
                   @method("PATCH")
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Student Name</label>
+                            <label>Employee Name</label>
                             <input type="text" class="form-control" name="emp_name" value="{{ $employee->emp_name }}">
                         </div>
                         <div class="col-md-6">
-                            <label>Student DOB</label>
+                            <label>Employee DOB</label>
                             <input type="date" class="form-control" name="dob" value="{{ $employee->dob }}">
                         </div>
                     </div>
