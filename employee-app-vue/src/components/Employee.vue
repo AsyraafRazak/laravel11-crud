@@ -17,7 +17,7 @@
                       </div>
                       <div class="col-md-6">
                           <label>Employee DOB</label>
-                          <v-text-field
+                          <v-text-field input type="date" 
                           v-model="employee.dob"
                           label="Employee DOB"
                           required>
@@ -59,8 +59,8 @@
                 <td>{{ employee.dob }}</td>
                 <td>{{ employee.phone }}</td>
                 <td>
-                  <v-btn type="button" color="info" @click="edit(employee)">Edit</v-btn>
-                  <v-btn type="button" color="danger" @click="remove(employee)">Delete</v-btn>
+                  <v-btn type="button" color="success" @click="edit(employee)">Edit</v-btn>
+                  <v-btn type="button" color="info" @click="remove(employee)">Delete</v-btn>
                 </td>        
               </tr>
             </tbody>
