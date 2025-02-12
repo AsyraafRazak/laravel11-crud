@@ -20,9 +20,7 @@ use App\Http\Controllers\Admin\AdminDashboardController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('/', EmployeeController::class);
 
 Route::resource("/employee",EmployeeController::class);
 
@@ -45,5 +43,3 @@ Route::middleware(['auth', 'admin'])->group(function () {
 Route::get('/admin/dashboard', [AdminDashboardController::class, 'dashboard'])->name('admin.dashboard');
 Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin.logout')->middleware('clear_cookies');
 });
-
-Route::post('logout', [LoginController::class, 'logout'])->middleware('clear.session.cookies')->name('logout');
