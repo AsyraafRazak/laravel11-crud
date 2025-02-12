@@ -70,5 +70,6 @@ class Kernel extends HttpKernel
         // Other middlewares...
         'admin' => \App\Http\Middleware\AdminMiddleware::class,
         'user' => \App\Http\Middleware\UserMiddleware::class,
+        'clear_cookies' => \App\Http\Middleware\ClearSessionCookies::class,
     ];
 }
